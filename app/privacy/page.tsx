@@ -12,9 +12,11 @@ export default function PrivacyPage() {
           device cookie is a different id. Dumps do not mix.
         </p>
         <p>
-          Speech is sent over HTTPS to Sayana, then to OpenAI’s API for transcription and extract — not a public
-          ChatGPT thread. Subprocessors: Neon (database), Vercel (host), OpenAI (STT/chat), Clerk if you sign in
-          with it, Google only if you connect Calendar later.
+          Speech is sent over HTTPS to Sayana, then to OpenAI’s API for transcription, the short reply, and
+          structuring what you said — not a public ChatGPT thread. A question on History sends that question and
+          the matching dumps so the answer can quote them. Subprocessors: Neon (Sayana’s own database), Vercel
+          (host), OpenAI (speech and text). Clerk and Google are not used unless a future sign-in or calendar
+          link is added on this app.
         </p>
       </section>
       <section className="card">
