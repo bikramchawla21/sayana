@@ -1,6 +1,6 @@
 # Sayana data dictionary
 
-All tables are prefixed `sayana_`. Every row except lookup-free events is scoped by `person_id`. Mixing dumps across people is a bug.
+Sayana keeps its own Postgres database (`DATABASE_URL` on this app only). Do not point it at another product’s database. Tables are prefixed `sayana_`. Every row except lookup-free events is scoped by `person_id`. Mixing dumps across people is a bug.
 
 | Table | Point of the row |
 | --- | --- |
